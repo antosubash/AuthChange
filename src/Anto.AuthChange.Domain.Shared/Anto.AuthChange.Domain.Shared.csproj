@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Anto.AuthChange</RootNamespace>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\AuthChange\*.json" />
+    <Content Remove="Localization\AuthChange\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.*" />
+  </ItemGroup>
+
+</Project>
