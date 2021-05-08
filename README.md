@@ -3,3 +3,6 @@
 
 
 Identity server is great for complex applications but if you want a simple application with few roles using IdentityServer4 can be overkill. This is a sample project to remove the identity server from the default ABP application.
+
+
+Youtube Video: https://www.youtube.com/watch?v=6By_lKDyTGg
