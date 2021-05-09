@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Account.Application" Version="4.3.0" />
+    <ProjectReference Include="..\..\modules\Volo.Account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
     <PackageReference Include="Volo.Abp.Identity.Application" Version="4.3.0" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.3.0" />
     <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.3.0" />
